@@ -1,0 +1,1 @@
+All included tracks are by [Matt Luedke](https://github.com/mluedke2/app-preview-music) and freely distributed with the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/). You are free to use them for any purpose as long as you don't claim them as your own.

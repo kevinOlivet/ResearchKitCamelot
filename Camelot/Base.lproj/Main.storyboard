@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Camelot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="ggi-SV-6jK">
+                                <rect key="frame" x="146" y="200.5" width="82" height="265"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld4-xT-bPe">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="30"/>
+                                        <state key="normal" title="Authorize"/>
+                                        <connections>
+                                            <action selector="authorizeTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2UR-Jr-mHb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fG-5R-PxI">
+                                        <rect key="frame" x="0.0" y="47" width="82" height="30"/>
+                                        <state key="normal" title="Consent"/>
+                                        <connections>
+                                            <action selector="consentTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zoD-z4-bEM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXy-12-I0p">
+                                        <rect key="frame" x="0.0" y="94" width="82" height="30"/>
+                                        <state key="normal" title="Survey"/>
+                                        <connections>
+                                            <action selector="surveyTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4b3-JO-FnI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0k-K6-Xdk">
+                                        <rect key="frame" x="0.0" y="141" width="82" height="30"/>
+                                        <state key="normal" title="Microphone"/>
+                                        <connections>
+                                            <action selector="microphoneTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gXJ-QJ-Vbh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyY-kA-7ta">
+                                        <rect key="frame" x="0.0" y="188" width="82" height="30"/>
+                                        <state key="normal" title="Walk"/>
+                                        <connections>
+                                            <action selector="walkTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCv-JU-6xK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghu-zP-3gY">
+                                        <rect key="frame" x="0.0" y="235" width="82" height="30"/>
+                                        <state key="normal" title="Music"/>
+                                        <connections>
+                                            <action selector="musicTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c5z-LG-YCl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ggi-SV-6jK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E09-R0-DOM"/>
+                            <constraint firstItem="ggi-SV-6jK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hhd-cw-VCj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorizeButton" destination="ld4-xT-bPe" id="3Bh-4r-Zl3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

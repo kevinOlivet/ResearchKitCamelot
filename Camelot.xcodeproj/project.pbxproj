@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D07E6741F4C646D00B3A903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E6731F4C646D00B3A903 /* AppDelegate.swift */; };
+		2D07E6761F4C646D00B3A903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E6751F4C646D00B3A903 /* ViewController.swift */; };
+		2D07E6791F4C646D00B3A903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D07E6771F4C646D00B3A903 /* Main.storyboard */; };
+		2D07E67B1F4C646D00B3A903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D07E67A1F4C646D00B3A903 /* Assets.xcassets */; };
+		2D07E67E1F4C646D00B3A903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D07E67C1F4C646D00B3A903 /* LaunchScreen.storyboard */; };
+		2D07E6861F4C665E00B3A903 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E6851F4C665E00B3A903 /* ConsentDocument.swift */; };
+		2D07E6881F4C69DE00B3A903 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E6871F4C69DE00B3A903 /* ConsentTask.swift */; };
+		2D07E68A1F4C713B00B3A903 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E6891F4C713B00B3A903 /* SurveyTask.swift */; };
+		2D07E68C1F4C79F600B3A903 /* MicrophoneTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D07E68B1F4C79F600B3A903 /* MicrophoneTask.swift */; };
+		2DBF00481F544B9C00F0E4D9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBF00471F544B9C00F0E4D9 /* HealthKit.framework */; };
+		2DBF004A1F544BDA00F0E4D9 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF00491F544BDA00F0E4D9 /* HealthKitManager.swift */; };
+		2DBF004C1F545ED100F0E4D9 /* WalkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF004B1F545ED100F0E4D9 /* WalkTask.swift */; };
+		2DBF004E1F54613000F0E4D9 /* ResultParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF004D1F54613000F0E4D9 /* ResultParser.swift */; };
+		2DBF00571F5465E400F0E4D9 /* chill_preview_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF00501F5465E400F0E4D9 /* chill_preview_3.mp3 */; };
+		2DBF00581F5465E400F0E4D9 /* chill_preview_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF00511F5465E400F0E4D9 /* chill_preview_4.mp3 */; };
+		2DBF00591F5465E400F0E4D9 /* dark_preview_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF00521F5465E400F0E4D9 /* dark_preview_4.mp3 */; };
+		2DBF005A1F5465E400F0E4D9 /* happy_preview_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF00531F5465E400F0E4D9 /* happy_preview_1.mp3 */; };
+		2DBF005B1F5465E400F0E4D9 /* light_preview_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF00541F5465E400F0E4D9 /* light_preview_2.mp3 */; };
+		2DBF005C1F5465E400F0E4D9 /* light_preview_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF00551F5465E400F0E4D9 /* light_preview_3.mp3 */; };
+		2DBF005D1F5465E400F0E4D9 /* MUSIC_LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF00561F5465E400F0E4D9 /* MUSIC_LICENSE.md */; };
+		2DBF005F1F54660400F0E4D9 /* MusicClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF005E1F54660400F0E4D9 /* MusicClip.swift */; };
+		2DBF00611F54677500F0E4D9 /* MusicStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF00601F54677500F0E4D9 /* MusicStep.swift */; };
+		2DBF00631F5467ED00F0E4D9 /* MusicStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF00621F5467ED00F0E4D9 /* MusicStepViewController.swift */; };
+		2DBF00651F5468EC00F0E4D9 /* MusicTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF00641F5468EC00F0E4D9 /* MusicTask.swift */; };
+		F2089409F91C688131B4593F /* Pods_Camelot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00392A3C5F8B079F2E92D543 /* Pods_Camelot.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00392A3C5F8B079F2E92D543 /* Pods_Camelot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Camelot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D07E6701F4C646D00B3A903 /* Camelot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camelot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D07E6731F4C646D00B3A903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D07E6751F4C646D00B3A903 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D07E6781F4C646D00B3A903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D07E67A1F4C646D00B3A903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D07E67D1F4C646D00B3A903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D07E67F1F4C646D00B3A903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D07E6851F4C665E00B3A903 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		2D07E6871F4C69DE00B3A903 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		2D07E6891F4C713B00B3A903 /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
+		2D07E68B1F4C79F600B3A903 /* MicrophoneTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrophoneTask.swift; sourceTree = "<group>"; };
+		2DBF00461F544B9C00F0E4D9 /* Camelot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Camelot.entitlements; sourceTree = "<group>"; };
+		2DBF00471F544B9C00F0E4D9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		2DBF00491F544BDA00F0E4D9 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		2DBF004B1F545ED100F0E4D9 /* WalkTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkTask.swift; sourceTree = "<group>"; };
+		2DBF004D1F54613000F0E4D9 /* ResultParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultParser.swift; sourceTree = "<group>"; };
+		2DBF00501F5465E400F0E4D9 /* chill_preview_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chill_preview_3.mp3; sourceTree = "<group>"; };
+		2DBF00511F5465E400F0E4D9 /* chill_preview_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chill_preview_4.mp3; sourceTree = "<group>"; };
+		2DBF00521F5465E400F0E4D9 /* dark_preview_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dark_preview_4.mp3; sourceTree = "<group>"; };
+		2DBF00531F5465E400F0E4D9 /* happy_preview_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = happy_preview_1.mp3; sourceTree = "<group>"; };
+		2DBF00541F5465E400F0E4D9 /* light_preview_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = light_preview_2.mp3; sourceTree = "<group>"; };
+		2DBF00551F5465E400F0E4D9 /* light_preview_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = light_preview_3.mp3; sourceTree = "<group>"; };
+		2DBF00561F5465E400F0E4D9 /* MUSIC_LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MUSIC_LICENSE.md; sourceTree = "<group>"; };
+		2DBF005E1F54660400F0E4D9 /* MusicClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicClip.swift; sourceTree = "<group>"; };
+		2DBF00601F54677500F0E4D9 /* MusicStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicStep.swift; sourceTree = "<group>"; };
+		2DBF00621F5467ED00F0E4D9 /* MusicStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicStepViewController.swift; sourceTree = "<group>"; };
+		2DBF00641F5468EC00F0E4D9 /* MusicTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTask.swift; sourceTree = "<group>"; };
+		644212D094C252AB24BC4D2B /* Pods-Camelot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Camelot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Camelot/Pods-Camelot.release.xcconfig"; sourceTree = "<group>"; };
+		67B3EC4144A27C22B9566CD1 /* Pods-Camelot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Camelot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Camelot/Pods-Camelot.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D07E66D1F4C646D00B3A903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2089409F91C688131B4593F /* Pods_Camelot.framework in Frameworks */,
+				2DBF00481F544B9C00F0E4D9 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D07E6671F4C646D00B3A903 = {
+			isa = PBXGroup;
+			children = (
+				2D07E6721F4C646D00B3A903 /* Camelot */,
+				2D07E6711F4C646D00B3A903 /* Products */,
+				5A565427F17C2B3E04B0A704 /* Pods */,
+				5C6DCFB885C47FC9A6DE53A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D07E6711F4C646D00B3A903 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D07E6701F4C646D00B3A903 /* Camelot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D07E6721F4C646D00B3A903 /* Camelot */ = {
+			isa = PBXGroup;
+			children = (
+				2D07E6851F4C665E00B3A903 /* ConsentDocument.swift */,
+				2D07E6871F4C69DE00B3A903 /* ConsentTask.swift */,
+				2DBF00491F544BDA00F0E4D9 /* HealthKitManager.swift */,
+				2D07E68B1F4C79F600B3A903 /* MicrophoneTask.swift */,
+				2DBF005E1F54660400F0E4D9 /* MusicClip.swift */,
+				2DBF00601F54677500F0E4D9 /* MusicStep.swift */,
+				2DBF00621F5467ED00F0E4D9 /* MusicStepViewController.swift */,
+				2DBF00641F5468EC00F0E4D9 /* MusicTask.swift */,
+				2DBF004D1F54613000F0E4D9 /* ResultParser.swift */,
+				2D07E6891F4C713B00B3A903 /* SurveyTask.swift */,
+				2D07E6751F4C646D00B3A903 /* ViewController.swift */,
+				2DBF004B1F545ED100F0E4D9 /* WalkTask.swift */,
+				2D07E67A1F4C646D00B3A903 /* Assets.xcassets */,
+				2DBF004F1F5465E400F0E4D9 /* music_clips */,
+				2D07E6731F4C646D00B3A903 /* AppDelegate.swift */,
+				2DBF00461F544B9C00F0E4D9 /* Camelot.entitlements */,
+				2D07E6771F4C646D00B3A903 /* Main.storyboard */,
+				2D07E67C1F4C646D00B3A903 /* LaunchScreen.storyboard */,
+				2D07E67F1F4C646D00B3A903 /* Info.plist */,
+			);
+			path = Camelot;
+			sourceTree = "<group>";
+		};
+		2DBF004F1F5465E400F0E4D9 /* music_clips */ = {
+			isa = PBXGroup;
+			children = (
+				2DBF00501F5465E400F0E4D9 /* chill_preview_3.mp3 */,
+				2DBF00511F5465E400F0E4D9 /* chill_preview_4.mp3 */,
+				2DBF00521F5465E400F0E4D9 /* dark_preview_4.mp3 */,
+				2DBF00531F5465E400F0E4D9 /* happy_preview_1.mp3 */,
+				2DBF00541F5465E400F0E4D9 /* light_preview_2.mp3 */,
+				2DBF00551F5465E400F0E4D9 /* light_preview_3.mp3 */,
+				2DBF00561F5465E400F0E4D9 /* MUSIC_LICENSE.md */,
+			);
+			path = music_clips;
+			sourceTree = "<group>";
+		};
+		5A565427F17C2B3E04B0A704 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67B3EC4144A27C22B9566CD1 /* Pods-Camelot.debug.xcconfig */,
+				644212D094C252AB24BC4D2B /* Pods-Camelot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C6DCFB885C47FC9A6DE53A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DBF00471F544B9C00F0E4D9 /* HealthKit.framework */,
+				00392A3C5F8B079F2E92D543 /* Pods_Camelot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D07E66F1F4C646D00B3A903 /* Camelot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D07E6821F4C646D00B3A903 /* Build configuration list for PBXNativeTarget "Camelot" */;
+			buildPhases = (
+				CEE0B09BBD6746E5104526B5 /* [CP] Check Pods Manifest.lock */,
+				2D07E66C1F4C646D00B3A903 /* Sources */,
+				2D07E66D1F4C646D00B3A903 /* Frameworks */,
+				2D07E66E1F4C646D00B3A903 /* Resources */,
+				FFFF4167274C54B4E5B396AB /* [CP] Embed Pods Frameworks */,
+				B9495BC39D9A325078A64EB8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Camelot;
+			productName = Camelot;
+			productReference = 2D07E6701F4C646D00B3A903 /* Camelot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D07E6681F4C646D00B3A903 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jon Olivet";
+				TargetAttributes = {
+					2D07E66F1F4C646D00B3A903 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = F7Z96QXV9V;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2D07E66B1F4C646D00B3A903 /* Build configuration list for PBXProject "Camelot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D07E6671F4C646D00B3A903;
+			productRefGroup = 2D07E6711F4C646D00B3A903 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D07E66F1F4C646D00B3A903 /* Camelot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D07E66E1F4C646D00B3A903 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DBF00571F5465E400F0E4D9 /* chill_preview_3.mp3 in Resources */,
+				2D07E67E1F4C646D00B3A903 /* LaunchScreen.storyboard in Resources */,
+				2DBF005C1F5465E400F0E4D9 /* light_preview_3.mp3 in Resources */,
+				2D07E67B1F4C646D00B3A903 /* Assets.xcassets in Resources */,
+				2DBF005B1F5465E400F0E4D9 /* light_preview_2.mp3 in Resources */,
+				2DBF005A1F5465E400F0E4D9 /* happy_preview_1.mp3 in Resources */,
+				2DBF00581F5465E400F0E4D9 /* chill_preview_4.mp3 in Resources */,
+				2DBF00591F5465E400F0E4D9 /* dark_preview_4.mp3 in Resources */,
+				2D07E6791F4C646D00B3A903 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9495BC39D9A325078A64EB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Camelot/Pods-Camelot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE0B09BBD6746E5104526B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFFF4167274C54B4E5B396AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Camelot/Pods-Camelot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D07E66C1F4C646D00B3A903 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DBF005D1F5465E400F0E4D9 /* MUSIC_LICENSE.md in Sources */,
+				2D07E6761F4C646D00B3A903 /* ViewController.swift in Sources */,
+				2DBF004E1F54613000F0E4D9 /* ResultParser.swift in Sources */,
+				2D07E6881F4C69DE00B3A903 /* ConsentTask.swift in Sources */,
+				2DBF00651F5468EC00F0E4D9 /* MusicTask.swift in Sources */,
+				2D07E68C1F4C79F600B3A903 /* MicrophoneTask.swift in Sources */,
+				2DBF00631F5467ED00F0E4D9 /* MusicStepViewController.swift in Sources */,
+				2DBF004C1F545ED100F0E4D9 /* WalkTask.swift in Sources */,
+				2D07E68A1F4C713B00B3A903 /* SurveyTask.swift in Sources */,
+				2D07E6861F4C665E00B3A903 /* ConsentDocument.swift in Sources */,
+				2DBF004A1F544BDA00F0E4D9 /* HealthKitManager.swift in Sources */,
+				2D07E6741F4C646D00B3A903 /* AppDelegate.swift in Sources */,
+				2DBF005F1F54660400F0E4D9 /* MusicClip.swift in Sources */,
+				2DBF00611F54677500F0E4D9 /* MusicStep.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D07E6771F4C646D00B3A903 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D07E6781F4C646D00B3A903 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D07E67C1F4C646D00B3A903 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D07E67D1F4C646D00B3A903 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D07E6801F4C646D00B3A903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D07E6811F4C646D00B3A903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D07E6831F4C646D00B3A903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B3EC4144A27C22B9566CD1 /* Pods-Camelot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Camelot/Camelot.entitlements;
+				DEVELOPMENT_TEAM = F7Z96QXV9V;
+				INFOPLIST_FILE = Camelot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.jonolivet.Camelot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2D07E6841F4C646D00B3A903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 644212D094C252AB24BC4D2B /* Pods-Camelot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Camelot/Camelot.entitlements;
+				DEVELOPMENT_TEAM = F7Z96QXV9V;
+				INFOPLIST_FILE = Camelot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.jonolivet.Camelot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D07E66B1F4C646D00B3A903 /* Build configuration list for PBXProject "Camelot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D07E6801F4C646D00B3A903 /* Debug */,
+				2D07E6811F4C646D00B3A903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D07E6821F4C646D00B3A903 /* Build configuration list for PBXNativeTarget "Camelot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D07E6831F4C646D00B3A903 /* Debug */,
+				2D07E6841F4C646D00B3A903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D07E6681F4C646D00B3A903 /* Project object */;
+}
